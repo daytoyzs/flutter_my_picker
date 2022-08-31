@@ -411,7 +411,7 @@ class _MyDatePickerState extends State<MyDatePicker> {
     });
   }
 
-//   onConfirm() {
+  onConfirm() {
 //     DateTime date = new DateTime(now.year + yearIndex, monthIndex + 1,
 //         dayIndex + 1, hourIndex, minuteIndex);
     DateTime date = new DateTime(now.year + yearIndex, monthIndex + 1,

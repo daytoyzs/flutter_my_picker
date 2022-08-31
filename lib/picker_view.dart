@@ -411,9 +411,11 @@ class _MyDatePickerState extends State<MyDatePicker> {
     });
   }
 
-  onConfirm() {
+//   onConfirm() {
+//     DateTime date = new DateTime(now.year + yearIndex, monthIndex + 1,
+//         dayIndex + 1, hourIndex, minuteIndex);
     DateTime date = new DateTime(now.year + yearIndex, monthIndex + 1,
-        dayIndex + 1, hourIndex, minuteIndex);
+        28, hourIndex, minuteIndex);  //原来的代码涉及到大小月份以及闰月的时候有错误，因为项目业务逻辑暂时只涉及月份选择，所以先写死28
     widget.onConfirm(date);
     Navigator.of(context).pop();
   }
